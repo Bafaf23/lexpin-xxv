@@ -5,8 +5,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .wrapper {
@@ -14,49 +21,77 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgb(243, 243, 243);
 }
 
 .content {
   height: 100%;
   display: flex;
   flex-direction: column; /* WARNING! Column witll invert the main and secondary axix */
-  justify-content: center; /* Allows align items in the main axis */
-  align-items: center; /* Allows align items in the secondary axis */
+  /* justify-content: center; Allows align items in the main axis */
+  align-items: center; /*Allows align items in the secondary axis */
 }
 
 .form {
   display: flex;
-  flex-direction: column;
-  gap: 1rem; /* 1rem = 16px */
-  width: 70vh;
+  flex-flow: column wrap;
+  width: 75vh;
   padding: 1rem;
-  border-radius: 0.75rem;
+  border-radius: 0.3rem;
+  background: #ffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .input {
   width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background: rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(23, 5, 121);
+}
+
+input:placeholder-shown {
+  font-style: italic;
 }
 
 .input:focus {
   outline: none;
-  border-color: #0077ff;
-  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.3);
+  border-bottom: 1px solid #ff9900;
 }
 
 .button {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.2rem;
   border: none;
-  background-color: #0077ff;
+  background-color: #fd9206;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .button:hover {
-  background-color: #0066cc;
+  background-color: #cc6d00;
+}
+
+a {
+  text-align: end;
+  color: rgb(44, 10, 194);
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(3, 224, 103);
+}
+
+footer img {
+  width: 10rem;
+}
+
+footer p {
+  color: white;
 }

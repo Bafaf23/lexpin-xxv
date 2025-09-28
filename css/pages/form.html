@@ -3,44 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZjTUzloxImmwQ15Gjc5cm0MQBqMCb9xNfw&s"
+    />
     <title>Flexbox</title>
     <link rel="stylesheet" href="./../css/form.css" />
   </head>
   <body class="wrapper">
-    <header></header>
+    <header>
+      <img
+        src="./../../assets/imagenes/images-removebg-preview.png"
+        alt="Logotipo LEXPIN"
+      />
+    </header>
     <main class="content">
       <form
         action="mailto:lexpin@lexpin.com"
         method="post"
         enctype="text/plain"
-        class="form">
+        class="form"
+      >
         <h1>Contact</h1>
+        <label for="name">Name</label>
         <input
           type="text"
           id="name"
           name="name"
           class="input"
           placeholder="John Doe"
-          required />
+          required
+        />
+        <label for="email">Email</label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Email"
+          placeholder="email@correo.com"
           class="input"
-          required />
+          required
+        />
+        <label for="message">Message</label>
         <textarea
           id="message"
           name="message"
-          placeholder="Message"
+          placeholder="Message..."
           class="input"
-          required></textarea>
+          required
+        ></textarea>
         <input type="submit" value="Send" class="button" />
-        <a href="./../index.html">
-          Return to the main page
-        </a>
+        <a href="./../index.html"> 🏠 Return to the main page </a>
       </form>
     </main>
-    <footer></footer>
+    <footer>
+      <img
+        src="./../../assets/imagenes/images-removebg-preview.png"
+        alt="Logotipo LEXPIN"
+      />
+      <p>
+        | Desarrollado por Bryant Facenda. © 2025 Todos los derechos reservados.
+      </p>
+    </footer>
   </body>
 </html>
