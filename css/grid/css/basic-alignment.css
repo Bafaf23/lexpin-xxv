@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: fit-content;
+  gap: 1rem; /*We also have row-gap and column-gap*/
+}
+
+.item {
+  background-color: chartreuse;
+  border: 1px solid green;
+}
