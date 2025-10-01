@@ -6,19 +6,21 @@
 }
 
 body {
-  background: #eeeded;
-  padding: 5px 5px;
-}
-
-.perfil {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #eeeded;
+  padding: 5px 5px;
+  height: 100vh;
+}
+
+.perfil {
+  display: grid;
   background: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  gap: 20px;
-  height: fit-content;
+  width: 40rem;
+  gap: 5px;
 }
 
 .content {
@@ -27,31 +29,34 @@ body {
   gap: 5px;
   padding: 10px;
   border-radius: 10px;
-  background: rgb(245, 246, 247);
+  background: rgb(223, 224, 226);
 }
 
 .img-user {
-  width: 9rem;
-  height: 9rem;
-  border-radius: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: url(https://img.freepik.com/vector-gratis/escena-granja-naturaleza-granero-espantapajaros_1308-46264.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
 }
 
 .img-user img {
-  border-radius: 100%;
-  width: 9rem;
-  height: 9rem;
+  border-radius: 10px 10px 0 0;
 }
 
 .info-conten {
   padding: 5px;
   border-radius: 5px;
+  background: rgb(248, 247, 247);
 }
 
 .link {
   padding: 5px;
   border-radius: 5px;
   height: fit-content;
-  background: #edeeee;
+  background: #1ff303;
 }
 
 .link p {
@@ -70,7 +75,7 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 10px;
-  background: #0004ff8e;
+  background: #0004ff;
 }
 
 button {
@@ -78,13 +83,13 @@ button {
   border: none;
   cursor: pointer;
   font-size: 19px;
-  color: black;
-  background: rgb(230, 230, 230);
+  color: white;
+  background: rgb(255, 115, 0);
   border-radius: 10px;
 }
 
 button:hover {
-  background: rgba(211, 209, 209, 0.904);
+  background: rgba(182, 99, 5, 0.986);
   transform: translateY(-1px);
   transition: all 0.5s;
 }
