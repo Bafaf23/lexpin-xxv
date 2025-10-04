@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <a href="./index.html" class="logo">Brand</a>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">Examples</a>
+          <a href="#">Media</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <aside class="sidebar">
+        <ul class="sidebar-content">
+          <li>
+            <a href="#">Sample Content</a>
+          </li>
+          <li>
+            <a href="#">Sample Content</a>
+          </li>
+          <li>
+            <a href="#">Sample Content</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="content">
+        <section class="hero">
+          <h1>Responsive layouts with media querie &amp; media elements</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <figure>
+            <picture>
+              <!-- Large / Desktop -->
+              <source
+                media="(min-width: 1024px)"
+                srcset="https://picsum.photos/id/1015/800/500" />
+              <!-- Medium / Tables & laptops -->
+              <source
+                media="(min-width: 768px)"
+                srcset="https://picsum.photos/id/1015/600/400" />
+              <!-- Small / Mobile -->
+              <img
+                src="https://picsum.photos/id/1015/400/300"
+                alt="Landscape" />
+            </picture>
+          </figure>
+        </section>
+        <section class="cards">
+          <h2>Cards: grid + flex</h2>
+          <div class="cards-grid">
+            <article class="card">
+              <img src="https://picsum.photos/seed/a/600/400" alt="" />
+              <div>
+                <h3>Sample Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/a/600/400" alt="" />
+              <div>
+                <h3>Sample Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/a/600/400" alt="" />
+              <div>
+                <h3>Sample Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/a/600/400" alt="" />
+              <div>
+                <h3>Sample Card</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
