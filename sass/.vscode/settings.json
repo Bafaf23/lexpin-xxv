@@ -1,6 +1,6 @@
 {
   "liveSassCompile.settings.useNewCompiler": true,
-  "liveSassCompile.settings.showOutputWindowOn": "Warning",
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",

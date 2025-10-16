@@ -1,5 +1,40 @@
+@use "./../utils/mixins" as mix;
+@use "./../utils/variables" as vars;
+
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  @include mix.flex-row(space-between, center);
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.navbar {
+  @include mix.flex-row(center, center);
+  gap: 15px;
+
+  a {
+    color: vars.$primary-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
 }

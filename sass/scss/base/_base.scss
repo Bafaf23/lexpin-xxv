@@ -1,0 +1,11 @@
+@use "./../utils/mixins" as mix;
+
+body {
+  height: 100vh;
+}
+
+main,
+.wrapper {
+  min-height: 100%;
+  @include mix.flex-column;
+}

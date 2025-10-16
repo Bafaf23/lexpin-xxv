@@ -1,0 +1,13 @@
+@use "./../utils/mixins" as mix;
+
+.content {
+  @include mix.grid($col: 1);
+  width: 100%;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    @include mix.grid($col: repeat(2, 1fr), $gap: 1rem);
+  }
+}

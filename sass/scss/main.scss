@@ -1,7 +1,12 @@
-@use './base/_reset';
+@use "./base/reset";
+@use "./base/typography";
 
-@use './layouts/_header';
-@use './layouts/_hero';
+@use "./components/buttons";
+@use "./components/post";
 
-@use './utils/_variables';
+@use "./layouts/content";
+@use "./layouts/footer";
+@use "./layouts/header";
+@use "./layouts/hero";
 
+@use "./utils/variables";

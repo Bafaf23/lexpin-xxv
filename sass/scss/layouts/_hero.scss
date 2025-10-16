@@ -1,25 +1,37 @@
-@use "./../utils/_variables";
+@use "./../utils/mixins" as mix;
+@use "./../utils/variables" as vars;
 
 .hero {
-  background-color: utils.$primary-color;
+  @include mix.flex-column(center, center);
+  background-color: vars.$primary-color;
   color: white;
   padding: 50px 20px;
   text-align: center;
 
   img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 100%;
   }
 
   h1 {
-    font-family: $font-stack;
     font-size: 2.5em;
     margin-bottom: 10px;
   }
 
   p {
-    font-family: $font-stack;
     font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    @include mix.flex-row(space-evenly, center);
+
+    img {
+      max-width: 30%;
+      margin-bottom: 0;
+    }
   }
 }

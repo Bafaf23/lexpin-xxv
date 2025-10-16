@@ -1,0 +1,7 @@
+// Everything related to fonts in general terms (font family)
+
+@use "./../utils/variables" as vars;
+
+body {
+  font-family: vars.$font-stack;
+}

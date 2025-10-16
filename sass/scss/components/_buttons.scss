@@ -1,0 +1,28 @@
+@use "./../utils/variables" as vars;
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: vars.$primary-color;
+}
+
+.btn-success {
+  @extend .btn;
+  background-color: green;
+}
+
+.btn-danger {
+  @extend .btn;
+  background-color: red;
+}
