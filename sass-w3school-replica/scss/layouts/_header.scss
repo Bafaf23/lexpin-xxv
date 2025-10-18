@@ -1,0 +1,58 @@
+@use "./../utils/mixins" as mix;
+@use "./../utils/variables" as vars;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#header-content {
+  @include mix.flex-row($justify: space-between);
+  padding: vars.$base;
+  background-color: #f1f1f1;
+
+  .header-left,
+  .header-right {
+    @include mix.flex-row($gap: vars.$base);
+  }
+}
+
+#subheader-content {
+  @include mix.flex-row($gap: vars.$base);
+  padding: calc(vars.$base / 2) vars.$base;
+  background-color: #282a35;
+
+  a {
+    color: #f1f1f1;
+  }
+}
+
+#btn-tutorials,
+#btn-references,
+#btn-exercises,
+#btn-more,
+#btn-certified {
+  @include mix.display(none);
+}
+
+@media only screen and (min-width: 768px) {
+  #menu-btn {
+    @include mix.display(none);
+  }
+
+  #btn-tutorials,
+  #btn-references,
+  #btn-exercises,
+  #btn-more,
+  #btn-certified {
+    @include mix.display(block);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #search-btn,
+  #submenu-btn {
+    @include mix.display(none);
+  }
+}

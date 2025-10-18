@@ -1,0 +1,152 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: flex-start;
+    gap: 0;
+    height: calc(100vh - 95px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left-content,
+.right-content {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .left-content,
+  .right-content {
+    display: block;
+    flex: 0 0 15%;
+    padding: 1rem;
+  }
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: flex-start;
+    gap: 1rem;
+    position: sticky;
+    top: 95px;
+    border-right: 1px solid #ccc;
+  }
+  .right-content {
+    border-left: 1px solid #ccc;
+  }
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-between;
+  gap: 0;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+#header-content .header-left,
+#header-content .header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+#subheader-content {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #282a35;
+}
+#subheader-content a {
+  color: #f1f1f1;
+}
+
+#btn-tutorials,
+#btn-references,
+#btn-exercises,
+#btn-more,
+#btn-certified {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu-btn {
+    display: none;
+  }
+  #btn-tutorials,
+  #btn-references,
+  #btn-exercises,
+  #btn-more,
+  #btn-certified {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #search-btn,
+  #submenu-btn {
+    display: none;
+  }
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex: 1;
+  padding: 1rem;
+}
+
+.nav-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: #D9EEE1;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}/*# sourceMappingURL=main.css.map */

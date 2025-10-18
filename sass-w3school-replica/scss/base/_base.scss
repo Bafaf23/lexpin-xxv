@@ -1,0 +1,26 @@
+@use "./../utils/mixins" as *;
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    @include flex-row($gap: 0);
+    height: calc(100vh - 95px);
+  }
+}

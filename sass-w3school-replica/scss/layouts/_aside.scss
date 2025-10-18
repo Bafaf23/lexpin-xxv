@@ -1,0 +1,27 @@
+@use "./../utils/mixins" as mix;
+@use "./../utils/variables" as vars;
+
+.left-content,
+.right-content {
+  @include mix.display(none);
+}
+
+@media only screen and (min-width: 992px) {
+  .left-content,
+  .right-content {
+    @include mix.display(block);
+    flex: 0 0 15%;
+    padding: vars.$base;
+  }
+
+  .left-content {
+    @include mix.flex-column($gap: vars.$base);
+    position: sticky;
+    top: 95px;
+    border-right: 1px solid #ccc;
+  }
+
+  .right-content {
+    border-left: 1px solid #ccc;
+  }
+}

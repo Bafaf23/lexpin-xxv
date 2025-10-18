@@ -1,0 +1,21 @@
+@mixin display($value: block) {
+  // Change between hidden and visible
+  // Recommended values: none, block
+  display: $value;
+}
+
+@mixin flex-row($justify: flex-start, $align: normal, $gap: 0) {
+  display: flex;
+  flex-direction: row;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin flex-column($justify: flex-start, $align: normal, $gap: 0) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
