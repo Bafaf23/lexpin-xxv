@@ -1,0 +1,29 @@
+@use "./../utils/" as *;
+
+.input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+}
+
+#search-bar {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #search-bar {
+    position: relative;
+    display: inline-block;
+
+    img {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.75rem;
+    }
+  }
+}

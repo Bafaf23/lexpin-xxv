@@ -1,0 +1,62 @@
+@use "./../utils/" as *;
+
+.btn {
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    border-radius: 0.25rem;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  &--outline {
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #000;
+
+    &:hover {
+      background-color: #ccc;
+      border-radius: 1rem;
+    }
+  }
+}
+
+#btn-more,
+#btn-upgrade,
+#btn-certified {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #btn-more,
+  #btn-certified {
+    display: inline-block;
+  }
+
+  #btn-certified,
+  #btn-signin {
+    @include flex-row($align: center, $gap: 0.5rem);
+    padding: 0.5rem 1rem;
+  }
+
+  #btn-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #btn-upgrade {
+    @include flex-row($align: center, $gap: 0.5rem);
+    padding: 0.5rem 1rem;
+  }
+
+  #btn-search {
+    display: none;
+  }
+}

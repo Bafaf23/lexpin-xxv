@@ -1,5 +1,4 @@
-@use "./../utils/mixins" as mix;
-@use "./../utils/variables" as vars;
+@use "./../utils/" as *;
 
 .header {
   position: sticky;
@@ -7,52 +6,93 @@
   z-index: 10;
 }
 
-#header-content {
-  @include mix.flex-row($justify: space-between);
-  padding: vars.$base;
-  background-color: #f1f1f1;
+.nav {
+  display: none;
+}
 
-  .header-left,
-  .header-right {
-    @include mix.flex-row($gap: vars.$base);
+.logo {
+  margin: 0.5rem 0;
+  width: 40px;
+  height: auto;
+}
+
+#header-content {
+  @include flex-row($justify: space-between);
+  flex: 1 1 auto;
+  padding: 0 1rem;
+  background-color: $bg-color;
+
+  .header__left,
+  .header__right {
+    @include flex-row($align: center);
+  }
+
+  .header__nav {
+    display: none;
   }
 }
 
 #subheader-content {
-  @include mix.flex-row($gap: vars.$base);
-  padding: calc(vars.$base / 2) vars.$base;
-  background-color: #282a35;
+  @include flex-row();
+  padding: 0.25rem 1rem;
+  background-color: $bg-dark-color;
 
-  a {
-    color: #f1f1f1;
+  .subnav__list {
+    @include flex-row($align: center);
+
+    li {
+      list-style: none;
+
+      a {
+        color: #fff;
+      }
+    }
   }
-}
-
-#btn-tutorials,
-#btn-references,
-#btn-exercises,
-#btn-more,
-#btn-certified {
-  @include mix.display(none);
 }
 
 @media only screen and (min-width: 768px) {
-  #menu-btn {
-    @include mix.display(none);
+  .nav {
+    display: block;
   }
 
-  #btn-tutorials,
-  #btn-references,
-  #btn-exercises,
-  #btn-more,
-  #btn-certified {
-    @include mix.display(block);
+  #header-content {
+    .header__nav {
+      @include flex-row($gap: 0);
+      height: 100%;
+
+      li {
+        @include flex-row($align: center);
+        list-style: none;
+        height: 100%;
+        padding: 0 0.5rem;
+
+        &:hover {
+          background-color: $primary-color;
+          cursor: pointer;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        a {
+          color: #000;
+        }
+      }
+
+      #a-certificates {
+        display: none;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #search-btn,
-  #submenu-btn {
-    @include mix.display(none);
+  #header-content {
+    .header__nav {
+      #a-certificates {
+        @include flex-row($align: center);
+      }
+    }
   }
 }
