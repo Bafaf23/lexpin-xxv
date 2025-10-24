@@ -2,6 +2,7 @@
 
 .btn {
   border: none;
+  text-wrap: nowrap;
   cursor: pointer;
 
   &--primary {
@@ -33,7 +34,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $bp-md) {
   #btn-more,
   #btn-certified {
     display: inline-block;
@@ -50,7 +51,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $bp-lg) {
   #btn-upgrade {
     @include flex-row($align: center, $gap: 0.5rem);
     padding: 0.5rem 1rem;

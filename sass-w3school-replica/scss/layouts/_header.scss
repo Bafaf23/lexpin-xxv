@@ -12,8 +12,8 @@
 
 .logo {
   margin: 0.5rem 0;
-  width: 40px;
   height: auto;
+  width: 40px;
 }
 
 #header-content {
@@ -27,30 +27,65 @@
     @include flex-row($align: center);
   }
 
+  .header__right div {
+    @include flex-row($align: center, $gap: 0.25rem);
+  }
+
   .header__nav {
     display: none;
   }
 }
 
 #subheader-content {
-  @include flex-row();
-  padding: 0.25rem 1rem;
+  @include flex-row($gap: 0);
   background-color: $bg-dark-color;
+  height: 36px;
+  overflow: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 
   .subnav__list {
-    @include flex-row($align: center);
+    @include flex-row($align: center, $gap: 0);
+    height: 100%;
+    width: 100%;
 
     li {
+      @include flex-row($align: center);
+      height: 100%;
+      padding: 0 0.5rem;
       list-style: none;
+      text-wrap: nowrap;
+
+      &:hover {
+        background-color: lighten($bg-dark-color, 10%);
+        cursor: pointer;
+      }
 
       a {
         color: #fff;
       }
     }
   }
+
+  #subnav-menu {
+    @include flex-row($align: center);
+    position: sticky;
+    left: 0;
+    background-color: $bg-dark-color;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  #subnav-navigation-left,
+  #subnav-navigation-right {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $bp-md) {
   .nav {
     display: block;
   }
@@ -58,11 +93,13 @@
   #header-content {
     .header__nav {
       @include flex-row($gap: 0);
+      width: 100%;
       height: 100%;
 
       li {
         @include flex-row($align: center);
         list-style: none;
+        text-wrap: nowrap;
         height: 100%;
         padding: 0 0.5rem;
 
@@ -87,11 +124,49 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $bp-lg) {
   #header-content {
     .header__nav {
       #a-certificates {
         @include flex-row($align: center);
+      }
+    }
+  }
+
+  #subheader-content {
+    width: 100%;
+
+    #subnav-menu {
+      display: none;
+    }
+
+    #subnav-navigation-left,
+    #subnav-navigation-right {
+      @include flex-row($align: center);
+      height: 100%;
+      padding: 0 0.5rem;
+      text-wrap: nowrap;
+      cursor: pointer;
+    }
+
+    #subnav-navigation-left {
+      position: sticky;
+      left: 0;
+      background-color: $bg-dark-color;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    #subnav-navigation-right {
+      align-self: flex-end;
+      position: sticky;
+      right: 0;
+      background-color: $bg-dark-color;
+
+      &:hover {
+        background-color: $primary-color;
       }
     }
   }

@@ -66,14 +66,19 @@
         </div>
 
         <div class="header__right">
-          <button id="btn-upgrade" class="btn btn--outline" type="button">
-            <img src="./assets/svg/sparkles.svg" alt="Upgrade" class="ico" />
-            Upgrade
-          </button>
-          <button id="btn-certified" class="btn btn--outline" type="button">
-            <img src="./assets/svg/cart.svg" alt="Get Certified" class="ico" />
-            Get Certified
-          </button>
+          <div>
+            <button id="btn-upgrade" class="btn btn--outline" type="button">
+              <img src="./assets/svg/sparkles.svg" alt="Upgrade" class="ico" />
+              Upgrade
+            </button>
+            <button id="btn-certified" class="btn btn--outline" type="button">
+              <img
+                src="./assets/svg/cart.svg"
+                alt="Get Certified"
+                class="ico" />
+              Get Certified
+            </button>
+          </div>
           <button id="btn-signin" class="btn btn--primary" type="button">
             <img src="./assets/svg/user.svg" alt="Sign in" class="ico" />
             Sign in
@@ -82,21 +87,53 @@
       </nav>
 
       <nav id="subheader-content" aria-label="Secondary navigation">
-        <button
-          id="btn-submenu"
-          class="btn btn--outline"
-          type="button"
-          aria-expanded="false"
-          aria-controls="subnav-list">
-          Menu
-        </button>
+        <div id="subnav-navigation-left">
+          <a
+            href="#"
+            aria-expanded="false"
+            aria-controls="subnav-list">
+            <img src="./assets/svg/chevron-left.svg" alt="Left" class="ico" />
+          </a>
+        </div>
         <ul id="subnav-list" class="subnav__list">
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li id="subnav-menu">
+            <a
+              href="#"
+              aria-expanded="false"
+              aria-controls="subnav-list">
+              <img src="./assets/svg/menu.svg" alt="Menu" class="ico" />
+            </a>
+          </li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">SQL</a></li>
+          <li><a href="#">PYTHON</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">HOW TO</a></li>
+          <li><a href="#">W3.CSS</a></li>
+          <li><a href="#">C</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">C#</a></li>
+          <li><a href="#">BOOTSTRAP</a></li>
+          <li><a href="#">REACT</a></li>
+          <li><a href="#">MYSQL</a></li>
+          <li><a href="#">JQUERY</a></li>
+          <li><a href="#">EXCEL</a></li>
+          <li><a href="#">XML</a></li>
+          <li><a href="#">DJANGO</a></li>
+          <li><a href="#">NUMPY</a></li>
+          <li><a href="#">PANDAS</a></li>
         </ul>
+        <div id="subnav-navigation-right">
+          <a
+            href="#"
+            aria-expanded="false"
+            aria-controls="subnav-list">
+            <img src="./assets/svg/chevron-right.svg" alt="Right" class="ico" />
+          </a>
+        </div>
       </nav>
     </header>
 
