@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Page with TailwindCSS</title>
+    <!-- TailwindCSS-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/c640c833fe.js" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome in local -->
+    <!-- <link
+      rel="stylesheet"
+      href="./assets/vendor/fontawesome-free-7.1.0/all.min.css" /> -->
   </head>
   <body class="min-h-screen">
     <div class="flex flex-col gap-2 p-4 h-full">
-      <h1 class="text-3xl font-bold">Hello, TailwindCSS!</h1>
+      <h1 class="text-3xl font-bold">
+        Hello, TailwindCSS!
+        <span class="text-purple-600">
+          <i class="fa-regular fa-home"></i>
+        </span>
+      </h1>
 
       <h2 class="text-2xl font-bold">Flex Demostration with TailwindCSS</h2>
       <div class="flex flex-col gap-2">
@@ -83,5 +96,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Fontawesome in local -->
+    <!-- <script src="./assets/vendor/fontawesome-free-7.1.0/all.min.js"></script> -->
   </body>
 </html>

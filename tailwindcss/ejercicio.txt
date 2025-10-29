@@ -1,0 +1,7 @@
+Crear un mini blog responsive con Tailwind y fontawesome :3
+Header -> Main Content -> Footer
+
+El header tiene que tener enlaces a la derecha en la vista de ordenadores
+Y sólo un botón en la vista de móviles
+
+Cualquier tema... Lorem ipsums también se valen
