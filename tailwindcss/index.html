@@ -4,21 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Page with TailwindCSS</title>
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- TailwindCSS-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/c640c833fe.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c640c833fe.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="./input.css" />
 
     <!-- Fontawesome in local -->
     <!-- <link
       rel="stylesheet"
       href="./assets/vendor/fontawesome-free-7.1.0/all.min.css" /> -->
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen momo-signature-regular">
     <div class="flex flex-col gap-2 p-4 h-full">
-      <h1 class="text-3xl font-bold">
+      <h1 class="text-3xl font-bold animate__animated animate__jello">
         Hello, TailwindCSS!
-        <span class="text-purple-600">
+        <span class="text-purple-600 dark:text-lime-500">
           <i class="fa-regular fa-home"></i>
         </span>
       </h1>
@@ -60,38 +71,42 @@
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold">
-        Simple Layout Demostration with TailwindCSS
-      </h2>
-      <p class="text-sm font-bold text-gray-500">
-        Replace the div with semantic HTML elements in real life projects.
-      </p>
-      <div id="wrapper" class="flex h-96 border border-gray-400">
-        <div id="sidebar" class="bg-orange-400 w-1/5 max-w-40"></div>
-        <div id="container" class="h-auto flex flex-col w-full">
-          <div id="header" class="bg-blue-400 h-12"></div>
-          <div id="main" class="h-full flex flex-col">
-            <div id="subnav" class="bg-amber-300 h-8"></div>
-            <div id="content" class="bg-emerald-400 h-full"></div>
+      <div data-aos="fade-up">
+        <h2 class="text-2xl font-bold">
+          Simple Layout Demostration with TailwindCSS
+        </h2>
+        <p class="text-sm font-bold text-gray-500">
+          Replace the div with semantic HTML elements in real life projects.
+        </p>
+        <div id="wrapper" class="flex h-96 border border-gray-400">
+          <div id="sidebar" class="bg-orange-400 w-1/5 max-w-40"></div>
+          <div id="container" class="h-auto flex flex-col w-full">
+            <div id="header" class="bg-blue-400 h-12"></div>
+            <div id="main" class="h-full flex flex-col">
+              <div id="subnav" class="bg-amber-300 h-8"></div>
+              <div id="content" class="bg-emerald-400 h-full"></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold">
-        Simple Responsive Layout Demostration with TailwindCSS
-      </h2>
-      <p class="text-sm font-bold text-gray-500">
-        Replace the div with semantic HTML elements in real life projects.
-      </p>
-      <div id="wrapper" class="flex h-96 border border-gray-400">
-        <div
-          id="sidebar"
-          class="hidden bg-orange-400 md:block md:w-1/5 md:max-w-40 lg:w-1/4 lg:max-w-60"></div>
-        <div id="container" class="h-auto flex flex-col w-full">
-          <div id="header" class="bg-blue-400 h-12"></div>
-          <div id="main" class="h-full flex flex-col">
-            <div id="subnav" class="bg-amber-300 h-8"></div>
-            <div id="content" class="bg-emerald-400 h-full"></div>
+      <div data-aos="fade-up">
+        <h2 class="text-2xl font-bold">
+          Simple Responsive Layout Demostration with TailwindCSS
+        </h2>
+        <p class="text-sm font-bold text-gray-500">
+          Replace the div with semantic HTML elements in real life projects.
+        </p>
+        <div id="wrapper" class="flex h-96 border border-gray-400">
+          <div
+            id="sidebar"
+            class="hidden bg-orange-400 md:block md:w-1/5 md:max-w-40 lg:w-1/4 lg:max-w-60"></div>
+          <div id="container" class="h-auto flex flex-col w-full">
+            <div id="header" class="bg-blue-400 h-12"></div>
+            <div id="main" class="h-full flex flex-col">
+              <div id="subnav" class="bg-amber-300 h-8"></div>
+              <div id="content" class="bg-emerald-400 h-full"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -99,5 +114,11 @@
 
     <!-- Fontawesome in local -->
     <!-- <script src="./assets/vendor/fontawesome-free-7.1.0/all.min.js"></script> -->
+
+    <!-- Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
