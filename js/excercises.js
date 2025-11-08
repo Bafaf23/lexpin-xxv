@@ -17,6 +17,11 @@
  * 4. Declare a variable counter = 5. Use the post-increment operator (++)
  * once. What is the value of counter after the operation?
  * 
+ * 5. A configuration setting is valid if its status is a boolean OR its level
+ * is a number greater than 50. Declare status = null and level = 75. Write a
+ * single expression to check the validity and store the boolean result in
+ * isValidConfig
+ * 
  * 6. Calculate the result of the expression: (5 * 4) + (20 / 5) - 3
  * WITHOUT executing the script.
  * 
