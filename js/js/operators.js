@@ -33,6 +33,12 @@ console.log("Is JavaScript fun?", isJavaScriptFun);
 let z;
 console.log("The value of z is:", z);
 
+// Constants
+
+const message = "Hello! I'm a constant";
+// message = "Try this and your code will explode :D"
+console.log(message);
+
 // Some ways to print variables and strings together
 
 // Comma separation
@@ -153,7 +159,7 @@ let iWantCoffe = false;
 
 console.log(
   `I'm on my way to have some lunch? ${
-    iAmHunger || iWantCoffe && iAmGoingToTheStore
+    iAmHunger || (iWantCoffe && iAmGoingToTheStore)
   }`
 );
 
@@ -161,7 +167,6 @@ console.log(
 // Script made with 🥔 by Angélica Rivas
 let number = 2.14159265359;
 console.log(`Is (number + 1) greater than pi? ${number++ < 3.14159265359}`);
-
 
 // Typeof Operator
 // The typeof operator is used to determine the data type of a variable or an expression.
@@ -185,4 +190,4 @@ console.log(`The type of variable5 is: ${typeof variable5}`);
 
 // A bug is an error, flaw, failure, or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
 // Howerver, they are remarkable for not interfering with the normal functionality of the language.
-console.log(typeof(variable5) === "object"); // This will return true
+console.log(typeof variable5 === "object"); // This will return true
