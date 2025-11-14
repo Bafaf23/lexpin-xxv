@@ -70,15 +70,32 @@ for (let i = 1; i <= 20; i++) {
 let sum = 0;
 
 for (let i = 1; i <= 100; i++) {
-  sum += i; Acumulator (sum = sum + i)
+  sum += i; // Acumulator((sum = sum + i));
   console.log(`Iteration ${i}: Sum is ${sum}`);
   if (i == 100) {
     console.log(`The value of sum is: ${sum}`);
   }
 }
 
-/** 
+/**
  * Practice.
  * Create a script that counts numbers from 20 to 0 and shows a custom message
  * if the number is multiple of 5.
  */
+
+// let cont = 20;
+
+// while (cont >= 0) {
+//   if (cont % 5 === 0) {
+//     console.log(cont + " es múltiplo de 5");
+//   } 
+//   cont--;
+// }
+
+for (let i = 20; i >= 0; i--) {
+  console.log(`This is the ${i} iteration.`)
+
+  if (i % 5 === 0 && i !== 0) {
+    console.log(`Congrats! This number is multiple of 5 :D`)
+  }
+}
