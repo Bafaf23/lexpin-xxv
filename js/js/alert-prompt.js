@@ -4,6 +4,8 @@
  * - prompt(): Allows to capture user input from a dialog box
  */
 
+alert("Welcome to the JavaScript course!");
+
 let userName = prompt("What is your name?");
 alert(`Hello, ${userName}! Welcome to the JavaScript course.`);
 console.log(typeof userName); // Prompt always returns strings
@@ -19,8 +21,10 @@ num = parseFloat(num);
 for (let i = num; i >= 0; i--) {
   console.log(`This is the ${i} iteration.`);
 
-  if (i % 5 === 0 && i !== 0) alert(`Congrats! ${i} is multiple of 5`);
-  console.log(`${i} is multiple of 5`);
+  if (i % 5 === 0 && i !== 0) {
+    alert(`Congrats! ${i} is multiple of 5`);
+    console.log(`${i} is multiple of 5`);
+  }
 }
 
 /**
