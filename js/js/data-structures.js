@@ -13,9 +13,8 @@
  * They are sructures that allow us to store multiple values in a
  * single variable.
  * Each value is identified by an index, which represents its
- * position within
- * the array. Arrays are useful for organizing and manipulating
- * collections of data.
+ * position within the array.
+ * Arrays are useful for organizing and manipulating collections of data.
  */
 
 let fruits = ["apple", "mango", "pineapple", "grape", "orange"];
@@ -138,73 +137,3 @@ for (let key in person) {
     }
   }
 }
-
-let persons = [
-  {
-    firstName: "Angélica",
-    lastName: "Rivas",
-    age: 25,
-    hobbies: ["programming", "gamming", "reading manga", "suffering"],
-    address: {
-      country: "Venezuela",
-      city: "Valencia",
-      street: "Av. Bolívar",
-    },
-  },
-  {
-    firstName: "Daniel",
-    lastName: "Querales",
-    age: 25,
-    hobbies: ["programming", "gamming", "watching series"],
-    address: {
-      country: "Venezuela",
-      city: "Caracas",
-      street: "Av. Bolívar",
-    },
-  },
-  {
-    firstName: "Kevin",
-    lastName: "Singer",
-    age: 32,
-    hobbies: ["programming", "gamming", "math"],
-    address: {
-      country: "Venezuela",
-      city: "Delta Amacuro",
-      street: "Av. Bolívar",
-    },
-  },
-  {
-    firstName: "Juan",
-    lastName: "Padilla",
-    age: 29,
-    hobbies: ["coocking", "baking", "ham"],
-    address: {
-      country: "Venezuela",
-      city: "Bolívar",
-      street: "Av. Bolívar",
-    },
-  },
-  {
-    firstName: "Yeferson",
-    lastName: "Adames",
-    age: 16,
-    hobbies: ["dinosaurs", "Leage of Legends", "Valorant"],
-    address: {
-      country: "Venezuela",
-      city: "Zulia",
-      street: "Av. Bolívar",
-    },
-  },
-];
-
-/**
- * Del array anterior, imprimir:
- * - Nombres completos de cada persona.
- * - Ciudad de residencia de cada persona.
- * - Primer hobby de cada persona.
- * - La segunda persona en el array.
- * - La última persona en el array.
- * - Todas las personas que vivan en "Valencia".
- * - Todas las personas mayores de 25 años.
- * - Todas las personas que tengan "programming" como hobby.
- */
