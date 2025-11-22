@@ -31,8 +31,9 @@
  *    propiedad spd (velocidad) de cada personaje.
  * 3. Durante cada turno, un personaje debe atacar a otro 
  *    seleccionado al azar. El daño infligido debe calcularse usando
- *    las propiedades atk y def de los personajes involucrados,
- *    seleccionando una de las habilidades disponibles al azar.
+ *    las propiedades atk y def de los personajes involucrados;
+ *    así como una de las habilidades disponibles del atacante
+ *    seleccionada al azar.
  * 4. Si un personaje pierde toda su hp, debe ser eliminado del    
  *    juego.
  * 5. La batalla continúa hasta que solo quede un personaje en pie,
