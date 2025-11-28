@@ -4,27 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first script in JavaScript</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <h1>My first script in JavaScript</h1>
-    <ul>
-      <li>Etiquette 1</li>
-      <li>Etiquette 2</li>
-      <li>Etiquette 3</li>
-    </ul>
+    <div class="flex flex-col p-4 gap-2">
+      <h1 id="main-heading" class="text-3xl font-bold">
+        My first script in JavaScript
+      </h1>
+      <p>This is my first paragraph.</p>
 
+      <hr class="w-1/2 mt-2" />
+            
+      <div class="flex flex-col gap-2 mt-2">
+        <ul id="main-list">
+          <li name="qwerty">Etiquette 1</li>
+          <li>Etiquette 2</li>
+          <li>Etiquette 3</li>
+        </ul>
+        <form
+          action="#"
+          id="item-form"
+          class="flex flex-col w-1/3 p-4 gap-2 border border-gray-300 rounded">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="border border-gray-300" />
+          <button
+            type="button"
+            id="add-button"
+            class="bg-blue-500 text-white px-4 py-2 rounded">
+            Add Item
+          </button>
+        </form>
+      </div>
+
+      <hr class="w-1/2 mt-2" />
+
+      <div class="flex flex-col gap-2 mt-2">
+        <div class="flex p-4 bg-green-500">🥔</div>
+        <div class="flex p-4 bg-green-500">🥔</div>
+        <div class="flex p-4 bg-green-500">🥔</div>
+
+        <div class="flex gap-2">
+          <select name="div-selector" id="div-selector" class="border border-gray-300 p-1.5 w-[150px]">
+            <option value="0">Select a div</option>
+            <option value="1">Div 1</option>
+            <option value="2">Div 2</option>
+            <option value="3">Div 3</option>
+          </select>
+          <button id="btn-change-color" type="button" class="bg-blue-500 text-white px-4 py-2 rounded">Change Color</button>
+        </div>
+      </div>
+
+      
+    </div>
     <!-- Internal Javascript -->
     <!-- <script>
       console.log("Hello World!");
     </script> -->
 
     <!-- External Javascript -->
-    <script src="./js/operators.js"></script>
+    <!-- <script src="./js/operators.js"></script>
     <script src="./js/conditionals.js"></script>
     <script src="./js/loops.js"></script>
     <script src="./js/alert-prompt.js"></script>
     <script src="./js/data-structures.js"></script>
     <script src="./js/functions.js"></script>
+    <script src="./js/classes.js"></script> -->
+    <script src="./js/dom.js"></script>
   </body>
 </html>
