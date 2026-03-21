@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, World!</title>
+  </head>
+  <body>
+    <!-- DOM Manipulation -->
+    <h1 id="main-title">Hello, World!</h1>
+    <button id="change-title-btn">Click Me!</button>
+
+    <hr>
+
+    <!-- Retrieving values from input element and creating elements on the fly -->
+    <form>
+      <input type="text" id="user-input" placeholder="Type something..." />
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <ul id="list-container"></ul>
+
+    <hr>
+
+    <!-- Handling variable changes -->
+
+    <!-- Create a typescript code in main.ts that handles the counter functionality -->
+    <!-- The counter should start at 0 and increment/decrement by 1 when the respective buttons are clicked -->
+    <div id="counter-container">
+      <h2>Counter: <span id="counter">0</span></h2>
+      <button id="increment-btn">Increment</button>
+      <button id="decrement-btn">Decrement</button>
+    </div>
+  </body>
+
+  <script type="module" src="./../dist/main.js" defer></script>
+</html>
