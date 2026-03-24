@@ -29,3 +29,24 @@ submitBtn.addEventListener("click", (event) => {
     userInput.value = "";
   }
 });
+
+const counterDisplay = document.getElementById("counter") as HTMLSpanElement;
+
+const incrementBtn = document.getElementById(
+  "increment-btn",
+) as HTMLButtonElement;
+const decrementBtn = document.getElementById(
+  "decrement-btn",
+) as HTMLButtonElement;
+
+let counter: number = 0;
+
+incrementBtn.addEventListener("click", () => {
+  counter++;
+  counterDisplay.textContent = String(counter);
+});
+
+decrementBtn.addEventListener("click", () => {
+  counter--;
+  counterDisplay.textContent = String(counter);
+});
