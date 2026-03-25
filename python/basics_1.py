@@ -15,7 +15,7 @@ number_int = 42
 number_float = 3.14
 string = "Hello, Python!"
 boolean = True
-none_value = None # Represents the absence of a value
+none_value = None  # Represents the absence of a value
 
 # Data structures in Python
 list = [1, 2, 3, 4, 5]  # A list is a mutable ordered collection of items
@@ -33,8 +33,8 @@ sum_result = number_int + number_float  # Addition
 difference_result = number_int - number_float  # Subtraction
 product_result = number_int * number_float  # Multiplication
 quotient_result = number_int / number_float  # Division
-power_result = number_int ** 2  # Exponentiation
-square_root_result = number_int ** 0.5  # Square root
+power_result = number_int**2  # Exponentiation
+square_root_result = number_int**0.5  # Square root
 module_result = number_int % 5  # Modulus
 
 # Comparison operators: ==, !=, >, <, >=, <=
@@ -131,7 +131,9 @@ for item in my_tuple:
 my_tuple.count(2)  # Counting the occurrences of the value 2 in the tuple
 print(f"Count of 2 in the tuple: {my_tuple.count(2)}")
 
-my_tuple.index(3)  # Finding the index of the first occurrence of the value 3 in the tuple
+my_tuple.index(
+    3
+)  # Finding the index of the first occurrence of the value 3 in the tuple
 print(f"Index of 3 in the tuple: {my_tuple.index(3)}")
 
 # Dictionaries
@@ -156,7 +158,9 @@ print(f"Dictionary after adding country: {my_dict}")
 del my_dict["age"]  # Removing a key-value pair from the dictionary
 print(f"Dictionary after deleting age: {my_dict}")
 
-my_dict.update({"name": "Anna"})  # Updating the value of an existing key in the dictionary
+my_dict.update(
+    {"name": "Anna"}
+)  # Updating the value of an existing key in the dictionary
 print(f"Dictionary after updating name: {my_dict}")
 
 my_dict.clear()  # Removing all key-value pairs from the dictionary
