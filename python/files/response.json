@@ -1,0 +1,16 @@
+{
+  "score_data": [
+    {
+      "user_id": 1,
+      "score": 95
+    },
+    {
+      "user_id": 2,
+      "score": 49
+    },
+    {
+      "user_id": 3,
+      "score": 76
+    }
+  ]
+}
