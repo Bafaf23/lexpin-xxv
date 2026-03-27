@@ -1,0 +1,9 @@
+{
+  "employees": [
+    { "name": "Alice", "department": "HR", "salary": 50000 },
+    { "name": "Bob", "department": "IT", "salary": 60000 },
+    { "name": "Charlie", "department": "HR", "salary": 55000 },
+    { "name": "David", "department": "IT", "salary": 65000 },
+    { "name": "Eve", "department": "Finance", "salary": 70000 }
+  ]
+}
