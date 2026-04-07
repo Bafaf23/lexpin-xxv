@@ -1,4 +1,5 @@
 -- Database schema for Lexpin Library
+-- Run the commands one by one in the MySQL client
 
 -- Create the database if it does not exist
 CREATE DATABASE IF NOT EXISTS lexpin_library;
