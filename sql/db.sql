@@ -57,6 +57,34 @@ CREATE TABLE IF NOT EXISTS books_authors (
     FOREIGN KEY (author_id) REFERENCES authors (id)
 );
 
+-- Bonus: Alter tables
+SHOW CREATE TABLE books;
+
+ALTER TABLE books
+DROP FOREIGN KEY books_ibfk_1;
+
+ALTER TABLE books
+ADD CONSTRAINT books_ibfk_1
+FOREIGN KEY (publisher_id) REFERENCES publishers (id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+SHOW CREATE TABLE books_authors;
+
+ALTER TABLE books_authors
+DROP FOREIGN KEY books_authors_ibfk_1;
+
+ALTER TABLE books_authors
+DROP FOREIGN KEY books_authors_ibfk_2;
+
+ALTER TABLE books_authors
+ADD CONSTRAINT books_authors_ibfk_1 FOREIGN KEY (author_id) REFERENCES authors (id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE books_authors
+ADD CONSTRAINT books_authors_ibfk_2
+FOREIGN KEY (book_id) REFERENCES books (id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+-- Also study MODIFY COLUMN and RENAME COLUMN
+
 /* Insert sample data into the Lexpin Library database */
 
 -- Insert sample data
@@ -194,6 +222,16 @@ GROUP BY
     books.id;
 
 -- Note: Also study RIGTH JOIN and INNER JOIN
+
+-- Update a book's price
+UPDATE books
+SET price = 39.99
+WHERE id = 1;
+
+-- Delete a publisher
+DELETE FROM publishers
+WHERE id = 1;
+
 
 /*
 Exercises (CREATE DATABASES)
