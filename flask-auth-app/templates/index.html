@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<h1>Welcome to the Login/Registration Application with Flask</h1>
+
+{% if 'loggedin' not in session %}
+<ul>
+  <li><a href="/auth/register">Register</a></li>
+  <li><a href="/auth/login">Login</a></li>
+</ul>
+<p>You are not logged in.</p>
+<p>Use the links above to register or login.</p>
+{% endif %}
+
+{% if 'loggedin' in session %}
+<p>Welcome, {{ session['username'] }}!</p>
+<p>{{ msg }}</p>
+<p><a href="/logout">Logout</a></p>
+{% endif %}
+{% endblock %}
